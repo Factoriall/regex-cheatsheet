@@ -30,7 +30,7 @@
 ## 프로그래밍 언어별 정규표현식
 ### Java
 - Pattern, Matcher 클래스 사용
-- \ 대신 \\ 사용
+- \ 대신 \\\\ 사용
   * 코드  
 ~~~java
 Pattern pattern = Pattern.compile("[정규 표현식]");  
