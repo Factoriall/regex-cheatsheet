@@ -32,34 +32,42 @@
 - Pattern, Matcher 클래스 사용
 - \ 대신 \\ 사용
   * 코드  
+~~~java
 Pattern pattern = Pattern.compile("[정규 표현식]");  
-        Matcher matcher = pattern.matcher(searchTarget);  
-        while(matcher.find()){  
-            System.out.println(matcher.group(0));  
-        }  
+Matcher matcher = pattern.matcher(searchTarget);  
+while(matcher.find()){  
+ System.out.println(matcher.group(0));  
+}  
+~~~
 
 ### javascript
 - String class의 match 함수 이용
 
   * 코드  
+~~~javascript
 var regex = /[정규 표현식]/g;  
 console.log(searchTarget.match(regex));
+~~~
 
 ### c#
 - Regex.matches 메소드 사용
 - \ 대신 \\ 사용
 
   * 코드  
+~~~c#
 string regex = "[정규 표현식]";
 foreach (Match m in Regex.Matches(searchTarget, regex)){  
-            Console.WriteLine(m.Value);  
-        }
+ Console.WriteLine(m.Value);  
+}
+~~~
 
 ### python
 - re 라이브러리의 findall 메소드 사용
 
-  * 코드  
+  * 코드
+~~~python
 import re  
 result=re.findall([정규 표현식],search_target)  
-print(result)  
+print(result)
+~~~
 
