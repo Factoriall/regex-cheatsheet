@@ -45,6 +45,12 @@ while(matcher.find()){
  System.out.println(matcher.group(0));  
 }  
 ~~~
+#### Matcher 클래스 메서드
+- matcher.find(): 패턴이 일치 시 true 반환 후 그 index로 이동
+- matcher.start(): 매칭되는 문자의 시작 index 반환
+- matcher.end(): 매칭되는 문자의 끝 index 반환
+- matcher.group(): 매칭 부분 중 grouping된 문자 반환
+  - grouping: regex [asdfaf](1)(2)[asdasf]에서 ()로 쳐저있는 부분이 하나의 그룹, 0는 전체.
 
 ### javascript
 - String class의 match 함수 이용
